@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>   
+        <title>Document</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background-image:url('/img/img2.jpg') ;
+                background-size: 100% 700px;
+                background-repeat:repeat;
+            }
+           
+            .reg{
+                background-color: #2d85b0;
+                opacity: 0.5;
+                width: 500px;
+                height: 700px;
+                color:white;
+                margin:20px 0px 0px 490px;
+                font-size: 18;
+            }
+            h2{
+                text-align: Center;
+                padding:20px;
+            }
+            #register{
+                margin-left:50px;
+
+            }
+            label{
+                color:white;
+                font-family: sans-serif;
+                font-size: 16px;
+                font-style:italic;
+            }
+            .name{
+                width:300px;
+                border:none;
+                border-radius:3px;
+                outline:0;
+                padding:7px;
+            }
+            .btn{
+                width:200px;
+                padding:7px;
+                font-size:18px; 
+                font-weight: 600;
+                border:none;
+                border-radius:3px;
+                outline: 0;
+                position:absolute;
+              
+               left:630px;
+                right:150px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="reg">
+            <h2>Register Here</h2>
+            <form method="post" id="register">
+            <label>First Name:</label><br>
+            <input type="text" name="fname" placeholder="Enter Your First Name" class="name"><br><br>
+            <label>Last Name:</label><br>
+            <input type="text" name="lname" placeholder="Enter Your Last Name" class="name"><br><br>
+            <label>Email Address:</label><br>
+            <input type="email" name="email" placeholder="Enter Your Email" class="name"><br><br>
+            <label>Mobile No:</label><br>
+            <input type="text" name="phn" placeholder="Enter Your Mobile No" class="name"><br><br>
+            <label>Address:</label><br>
+            <textarea name="address" class="name" placeholder="Enter Address"></textarea><br><br>
+            <label>Department:</label><br>
+            <select  id="d1" class="name">
+                  <option value="" >Select Department</option>
+                  <option value="Computer Science">CS</option>
+                  <option value="Information Technology">IT</option>
+                  <option value="Electronlic and Telecommunication">ECE</option>
+            </select><br><br>
+            <label for="start">Enter DOB:</label><br>
+            <input type="date" name="begin" class="name" placeholder="dd-mm-yyyy " min="1997-01-01" max="2030-12-31"><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" id="male"><span id="male">&nbsp; Male</span>
+            <input type="radio" name="gender" id="female"><span id="female">&nbsp; Female</span>
+            <input type="radio" name="gender" id="other"><span id="Other">&nbsp; Other</span><br><br>
+            <input type="submit" value="Submit" class="btn">
+        </form>
+        </div>
+    </body>
+</html>
